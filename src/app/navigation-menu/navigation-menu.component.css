@@ -1,0 +1,4 @@
+.onlyCickable > ul > li > a:hover {
+    background-color: azure;
+    transform: scale(1.1);
+}

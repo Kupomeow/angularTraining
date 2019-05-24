@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-12 postGeneral shadow-lg border border-light">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <h2 class="text-center titleArticle text-dark">{{ post.title }}</h2>
+      </div>
+    </div>
+
+    <hr class="hrMin">
+
+    <app-game [post]="post"></app-game>
+
+    <div class="row mb-4 mt-4">
+      <div class="col-md-12 border-0"><img src="{{ post.img }}" alt="" class="img-fluid"></div>
+    </div>
+
+    <div class="row mt-5">
+      <div *ngFor="let paragraph of post.paragraphs" class="col-md-12 mb-2">
+        <p class="text-secondary">{{ paragraph }}</p>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <p class="signature">Ecrit le {{ post.publishingDate}} par {{ post.author.login }} </p>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h4>Note final: {{ post.star }}/5</h4>
+        </div>
+      </div>
+
+    <hr class="hrMin">
+
+    <app-author [post]="post"></app-author>
+
+    <hr class="hrMin">
+
+    <div class="row">
+      <div class="col-12 text-center mt-3">
+        <h3 class="text-secondary font-italic">Commentaire(s):</h3> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <app-commentaries [commentaries]="post.comments"></app-commentaries>
+      </div>
+    </div>
+
+  </div>
+</div>

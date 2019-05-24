@@ -1,0 +1,10 @@
+<div class="row mt-2">
+  <div class="col-3">
+    <img class="img-fluid border-0" src="{{ post.game.img }}" alt="">
+  </div>
+  <div class="col-9">
+   <h3 class="pt-1">{{ post.game.name }}</h3>
+   <p class="textSize">PEGI {{ post.game.pegi }}</p>
+   <p class="catFont"><span *ngFor="let category of post.game.categories">{{ category.name }} </span></p>
+  </div>
+</div>

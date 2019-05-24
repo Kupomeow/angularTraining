@@ -1,0 +1,5 @@
+<!-- <p *ngFor="let commentary of commentaries">
+  <span>{{ commentary.content }}</span>
+</p> -->
+
+<app-commentary *ngFor="let commentary of commentaries" [comment]="commentary"></app-commentary>
