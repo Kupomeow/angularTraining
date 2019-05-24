@@ -9,6 +9,7 @@ import { Post } from '../model/post.model';
 export class GameComponent implements OnInit {
 
   @Input() post: Post;
+  
   constructor() { }
 
   ngOnInit() {

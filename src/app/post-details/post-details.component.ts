@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Post } from '../model/post.model';
 
 @Component({
   selector: 'app-post-details',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostDetailsComponent implements OnInit {
 
-  constructor() { }
+  id: number;
+
+  constructor(public route:ActivatedRoute) {}
 
   ngOnInit() {
+    this.id = parseInt(this.route.snapshot.paramMap.get('id'));
   }
 
 }
