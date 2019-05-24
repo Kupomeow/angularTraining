@@ -10,6 +10,7 @@ import { AuthorComponent } from './author/author.component';
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
 import { CommentaryComponent } from './commentary/commentary.component';
 import { CommentariesComponent } from './commentaries/commentaries.component';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommentariesComponent } from './commentaries/commentaries.component';
     AuthorComponent,
     NavigationMenuComponent,
     CommentaryComponent,
-    CommentariesComponent
+    CommentariesComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,
