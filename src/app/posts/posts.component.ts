@@ -16,6 +16,7 @@ import { AuthorService } from '../services/author.service';
 export class PostsComponent implements OnInit {
 
   posts: Post[];
+  post: Post;
 
   constructor(public postService: PostService) { }
 

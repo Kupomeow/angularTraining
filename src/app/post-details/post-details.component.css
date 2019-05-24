@@ -1,3 +1,17 @@
-h1 {
-    margin-top: 10%;
+.hrMin {
+    width: 20%;
+}
+
+.titleArticle {
+    font-size: 50px;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.postGeneral {
+    margin-top: 8%;
+    padding: 2%;
 }
